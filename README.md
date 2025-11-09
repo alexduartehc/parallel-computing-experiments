@@ -31,7 +31,7 @@ Each rank integrates its local subinterval; rank 0 reduces & prints the result +
     0: sin(x); 1: cos(x); 2: tan(x); 3: 1/x 
 
 
-Learning Goals:
+## Learning Goals:
   * Practice data parallelism with Pthreads (row-wise work partitioning).
   * Practice distributed memory parallelism with MPI (domain decomposition + reduction).
   * Measure and interpret speedup and scaling behavior.
