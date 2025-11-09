@@ -22,8 +22,10 @@ Key implementation notes:
 
 What it does:
   * Uses composite Simpson’s rule distributed across p MPI ranks to approximate
-  * 
-![Integral](https://latex.codecogs.com/svg.image?\int_a^b%20f(x)\,dx)​. Each rank integrates its local subinterval; rank 0 reduces & prints the result + timing.
+  
+![Integral](https://latex.codecogs.com/svg.image?\int_a^b%20f(x)\,dx)​
+
+Each rank integrates its local subinterval; rank 0 reduces & prints the result + timing.
   * Integrands selectable via a flag:
 
     0: sin(x); 1: cos(x); 2: tan(x); 3: 1/x (default: cos)
