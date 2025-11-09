@@ -23,9 +23,9 @@ Project 2: Numerical Integration with MPI (Simpson’s Rule)
 What it does:
   * Uses composite Simpson’s rule distributed across p MPI ranks to approximate
 
-\[
+\(
 \int_a^b f(x) \, dx
-\]
+\)
 	​
 
 f(x)dx. Each rank integrates its local subinterval; rank 0 reduces & prints the result + timing. 
