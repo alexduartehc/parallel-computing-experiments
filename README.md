@@ -26,32 +26,29 @@ What it does:
 ![Integral](https://latex.codecogs.com/svg.image?\int_a^b%20f(x)\,dx)​
 
 Each rank integrates its local subinterval; rank 0 reduces & prints the result + timing.
-  * Integrands selectable via a flag:
+  * Integrands selectable via a flag: (default: cos)
 
-    0: sin(x); 1: cos(x); 2: tan(x); 3: 1/x (default: cos)
+    0: sin(x); 1: cos(x); 2: tan(x); 3: 1/x 
 
 
-Learning Goals
-
-Practice data parallelism with Pthreads (row-wise work partitioning). 
-
-matrix multiplication threads
-
-Practice distributed memory parallelism with MPI (domain decomposition + reduction). 
-
-numeircal integration MPI
-
-Measure and interpret speedup and scaling behavior.
-
+Learning Goals:
+  * Practice data parallelism with Pthreads (row-wise work partitioning).
+  * Practice distributed memory parallelism with MPI (domain decomposition + reduction).
+  * Measure and interpret speedup and scaling behavior.
 
 
 -----------
 
 
-parallel-mini-suite/
+parallel-computing-experiments
+
 │
+
 ├── matrix-multiplication-threads.c        # Pthreads matrix multiply with timing & report output
+
 ├── numerical-integration-mpi.cpp          # MPI Simpson’s rule integration with timing
+
 ├── README.md
+
 └── LICENSE (optional)
 
