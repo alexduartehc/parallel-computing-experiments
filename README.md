@@ -38,17 +38,11 @@ Each rank integrates its local subinterval; rank 0 reduces & prints the result +
 
 
 -----------
-
-
+```text
 parallel-computing-experiments
-
 │
-
 ├── matrix-multiplication-threads.c        # Pthreads matrix multiply with timing & report output
-
 ├── numerical-integration-mpi.cpp          # MPI Simpson’s rule integration with timing
-
 ├── README.md
-
 └── LICENSE (optional)
-
+```
